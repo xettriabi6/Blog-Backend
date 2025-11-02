@@ -26,7 +26,6 @@ public class EmailService {
         }
         catch (Exception e){
             log.error("Error while sending email "+e);
-            throw new RuntimeException();
         }
     }
 
@@ -55,7 +54,6 @@ public class EmailService {
         }
         catch (Exception e){
             log.error("Error while sending email "+e);
-            throw new RuntimeException();
         }
     }
 }
