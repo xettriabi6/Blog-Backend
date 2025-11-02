@@ -26,7 +26,7 @@ public class WebConfig implements WebMvcConfigurer {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
             "http://localhost:5173", //for dev
-            "https://tcgs-blogs-6odux99hl-abi-chhetris-projects.vercel.app" // production
+            "https://tcgs-blogs.vercel.app" // production
         )); 
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
