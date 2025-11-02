@@ -67,7 +67,7 @@ public class SignUp {
                 "The TCG's Blogs Team\n";
         if(existingUser==null){
             userService.saveNewUser(user);
-            emailService.sendMail(user.getEmail(),"Welcome to TCG's Blogs!",body);
+            //emailService.sendMail(user.getEmail(),"Welcome to TCG's Blogs!",body);
             return new ResponseEntity<>(user.getUserName()+" have signup successfully", HttpStatus.CREATED);
         }
         else {
